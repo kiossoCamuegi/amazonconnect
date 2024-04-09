@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,html{
+    padding:0px;
+    margin:0px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body ul, body ol{
+   padding:0px;
+   margin:0px;
+}
+
+ :root{
+     --yellow:#fe9900;
+     --background:#F8F9FA !important;
+     --white:#ffff;
+     --grey:#CED4DA;
+ }
+
+ body {
+    background: var(--background) !important;
+  }
+
+
+ body .bg-yellow{
+     background:var(--yellow);
+ }
+
+body .text-yellow{
+    color:var(--yellow);
+}
+
+ body .bg-black{
+     background:black;
+ }
+
+ /* **/
+
+ body .authentication .authentication-area{
+     display: flex;
+     min-height:100vh;
+ }
+
+ body .authentication .authentication-area .image-area{ 
+    min-width:750px;
+    width:750px;
+    height:100vh; 
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ body .authentication .authentication-area .image-area img{
+     width:100%;  
+ }
+
+ body .authentication .authentication-area .form-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    width:100%;
+ }
+
+ .authentication-area .form-area .form-box{
+    width:100%;
+     padding:20px;
+     background:var(--white);
+     box-shadow:0px 3px 10px rgba(0,0,0,0.1); 
+     border-radius:6px;
+     max-width:500px;
+ }
+
+ .authentication-area .form-area  form img{
+    max-width:150px;
+    margin-bottom:20px;
+ }
+
+ .authentication-area .form-area  form h1{
+   font-size:20px;
+   font-weight:bold;
+   margin:5px 0px;
+ }
+
+ .authentication-area .form-area  .blocks button,
+ .authentication-area .form-area  .blocks button div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .authentication-area .form-area  .blocks button div{
+    width: max-content !important;
+ }
+
+ .authentication-area .form-area  .blocks button div:first-child{ 
+     width:100% !important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center; 
+     font-size:16px;
+ }
+
+ .authentication-area .form-area  .blocks button{
+    padding:8px !important;
+    height: auto !important;
+    margin-top:10px !important;
+ }
+
+ .authentication-area .form-area  .blocks button div:first-child div{
+    width: max-content !important;
+    margin:0px 5px;  
+ }
+
+ .authentication-area .form-area button.bg-black{
+     width:100% !important;
+ }
+
+ .authentication-area .form-area  .or{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; 
+     width:100%;
+     margin:10px 0px;
+ }
+
+ .authentication-area .form-area  .or .ln{
+     width:40%;
+     height:1px;
+     background-color: var(--grey);
+ }
+
+ .authentication-area .form-area .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; 
+    flex-direction: column;  
+ }
+
+ .authentication-area .form-area .d-flex a{
+    margin-left:10px;
+ }
+
+@media screen and (max-width:1000px){
+    body .authentication .authentication-area .image-area{
+         display: none;
+    }
+}
+
+
+ /** end **/
